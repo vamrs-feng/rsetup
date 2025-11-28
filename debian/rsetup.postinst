@@ -14,6 +14,10 @@ then
     then
         cp /usr/share/doc/rsetup/config.txt /config/config.txt
     fi
+    if [ ! -e /config/logo.bmp ]
+    then
+        cp /usr/share/doc/rsetup/logo.bmp /config/logo.bmp
+    fi
     if [ ! -e /boot ]
     then
         mkdir /boot
